@@ -1,0 +1,510 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@1,300&family=Patrick+Hand&family=Poppins:wght@100&display=swap");
+@font-face {
+  font-family: "Chloe";
+  src: url("../Fonts/Chloe-Regular.otf");
+}
+@font-face {
+  font-family: "Montserrat light";
+  src: url(../Fonts/Montserrate/Montserrat-Light.ttf);
+}
+:root {
+  --primaryforeground: #000;
+  --primarybackground: #efefef;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*::selection {
+  background-color: var(--primaryforeground);
+  color: var(--primarybackground);
+}
+body {
+  background-color: var(--primarybackground);
+  overflow-x: hidden;
+  cursor: url(../Images/tempimages/blackcursor.png), default;
+}
+
+#nav {
+  display: flex;
+  width: 0px; /* Set it to 100vw by default */
+  height: 100vh;
+  background-color: var(--primarybackground);
+  transition: 0.8s;
+  z-index: 103;
+  opacity: 0;
+  position: fixed;
+  overflow-x: hidden;
+  /* border-right: 1px solid var(--primaryforeground); */
+}
+#top h1 {
+  color: var(--primaryforeground);
+  font-size: 40px;
+  border-bottom: 1px solid black;
+}
+#topright {
+  width: 35%;
+  display: flex;
+  align-items: center;
+  background-color: var(--primarybackground);
+}
+#topright h1 {
+  font-size: 6rem;
+  color: var(--primaryforeground);
+}
+#top {
+  width: 65%;
+  height: 100vh;
+  text-align: center;
+  /* margin: auto; */
+}
+#top h2 {
+  color: var(--primaryforeground);
+  /* font-size: 40px; */
+}
+.elem1 {
+  margin: 10px;
+}
+.elem1:hover {
+  cursor: pointer;
+}
+.elem1 a {
+  text-decoration: none;
+  color: #303036;
+}
+.elem1:hover {
+  top: -100%;
+}
+.elem1 {
+  overflow: hidden;
+  height: 64px;
+}
+.elem1 a {
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.4s;
+  flex-direction: column;
+}
+.elem1:hover a {
+  transform: translateY(-46%);
+}
+.show {
+  display: block !important; /* Important to override display: none */
+}
+
+#button {
+  /* color: rgb(255, 179, 0); */
+  font-size: 30px;
+  width: 100px;
+  height: 50px;
+  border-radius: 40px;
+  color: #efefef;
+  background-color: orange;
+  cursor: pointer;
+  border: none;
+  transform: translateY(-50px);
+}
+
+#hamburgermenu {
+  cursor: pointer;
+  position: fixed;
+  color: var(--primaryforeground);
+  font-size: 20px;
+  z-index: 105;
+  margin: 20px 40px;
+  padding: 10px;
+  background-color: #d4d4d4;
+  border-radius: 30px;
+  width: 80px;
+  text-align: center;
+}
+
+#hamburgermenu:hover {
+  color: var(--primarybackground);
+  cursor: url(../Images/tempimages/pointer-cursor.png), auto;
+  transition: ease-in 0.4s;
+}
+
+#mainpage {
+  width: 100vw;
+  height: 100vh;
+  /* position: absolute; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primarybackground);
+}
+#maintext {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  height: 80%;
+}
+
+.uppertext {
+  height: 20%;
+  text-align: center;
+  position: relative;
+  top: 10%;
+}
+.uppertext h4 {
+  color: var(--primaryforeground);
+}
+.lowertext {
+  width: 100%;
+  height: 80%;
+  /* background-color: blue; */
+}
+.lowertext h2 {
+  color: var(--primaryforeground);
+  font-size: 4rem;
+  word-wrap: normal;
+}
+#booktooltip {
+  display: inline-flex;
+  background-color: rgb(203, 34, 34);
+  border-radius: 40px;
+  padding: 10px;
+  width: 100px;
+  height: 70px;
+  justify-content: center;
+  align-items: center;
+}
+#booktooltip img {
+  width: 60%;
+  height: 80%;
+}
+#calendartooltip {
+  display: inline-flex;
+  background-color: rgb(50, 148, 228);
+  border-radius: 40px;
+  padding: 10px;
+  width: 100px;
+  height: 70px;
+  justify-content: center;
+  align-items: center;
+}
+#calendartooltip img {
+  width: 50%;
+  height: 80%;
+}
+#websitetooltip {
+  display: inline-flex;
+  background-color: rgb(50, 228, 139);
+  border-radius: 40px;
+  padding: 10px;
+  width: 100px;
+  height: 70px;
+  justify-content: center;
+  align-items: center;
+}
+#websitetooltip img {
+  width: 50%;
+  height: 80%;
+}
+#aitooltip {
+  display: inline-flex;
+  background-color: rgb(228, 213, 50);
+  border-radius: 40px;
+  padding: 10px;
+  width: 100px;
+  height: 70px;
+  justify-content: center;
+  align-items: center;
+}
+#aitooltip img {
+  width: 50%;
+  height: 80%;
+}
+#spacer {
+  width: 100vw;
+  height: 5vh;
+  background-color: var(--primarybackground);
+}
+
+#page2 {
+  width: 100vw;
+  height: 100%;
+  /* background-color: red; */
+  display: flex;
+  background-color: var(--primarybackground);
+}
+
+#p2head {
+  display: block;
+  font-family: chloe;
+  background-color: var(--primarybackground);
+  color: var(--primaryforeground);
+  font-size: 8vw;
+  cursor: url(../Images/tempimages/text-cursor.png), auto;
+  text-align: start;
+  padding-left: 50px;
+}
+#page2left {
+  background-color: var(--primarybackground);
+  height: 100%;
+  width: 40%;
+}
+
+#p2lefttop {
+  background-color: var(--primarybackground);
+  height: 60%;
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+.p2lefttopimg {
+  height: 200px;
+  grid-column-start: auto;
+  padding: 20px;
+  border-radius: 10px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 10px;
+}
+#p2lefttopimg1 {
+  background-image: url(../Images/tempimages/bilal.jpg);
+  background-size: cover;
+}
+#p2lefttopimg2 {
+  background-image: url(../Images/tempimages/bilal2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#p2lefttopimg3 {
+  background-image: url(../Images/tempimages/bilal3.jpg);
+  background-size: cover;
+}
+#p2lefttopimg4 {
+  background-image: url(../Images/tempimages/bilal4.jpg);
+  background-size: cover;
+}
+#p2leftbottom {
+  background-color: var(--primarybackground);
+  position: relative;
+  height: 40%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#p2leftbottombtn {
+  width: 50%;
+  height: 260px;
+  border-radius: 100%;
+  margin-top: 20px;
+  background-color: var(--primaryforeground);
+  color: var(--primarybackground);
+  cursor: url(../Images/tempimages/pointer-cursor.png), auto;
+  transition: ease-in 0.5s;
+}
+
+#p2leftbottombtn:hover {
+  color: var(--primaryforeground);
+  background-color: var(--primarybackground);
+  border: 1px solid var(--primaryforeground);
+}
+
+#page2right {
+  background-color: var(--primarybackground);
+  padding-left: 20px;
+  width: 58%;
+  height: 100%;
+}
+#page2right h3 {
+  background-color: var(--primarybackground);
+  font-family: serif;
+  color: var(--primaryforeground);
+  word-wrap: normal;
+  font-size: 2vw;
+}
+#p3head {
+  display: block;
+  font-family: chloe;
+  background-color: var(--primarybackground);
+  color: var(--primaryforeground);
+  font-size: 8vw;
+  cursor: url(../Images/tempimages/text-cursor.png), auto;
+  text-align: start;
+  padding-left: 50px;
+}
+#page3{
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--primarybackground);
+  align-items: center;
+  justify-content: center;
+}
+#experiences{
+  
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 90vh;
+  background-color: var(--primarybackground);
+  
+  
+}
+#experiences h1{
+  font-family: serif;
+  display: block;
+  margin-left: 20px;
+  line-height: 2;
+  font-size: 4vw;
+  cursor: url(../Images/tempimages/pointer-cursor.png),auto;
+  /* text-align: center; */
+  color: var(--primaryforeground);
+}
+#experiences h1:hover{
+  transition: ease 1s;
+  width: 100vw;
+  background-color: var(--primaryforeground);
+  color: var(--primarybackground);
+}
+footer {
+  background-color: var(--primarybackground);
+  color: var(--primaryforeground);
+  text-decoration: none;
+}
+
+.nav-link {
+  color: var(--primaryforeground);
+  text-decoration: none;
+}
+footer p {
+  color: var(--primaryforeground);
+}
+@media (max-width: 850px) {
+ #topright{
+  width: 20%;
+ }
+ #top{
+  width: 80%;
+ }
+  #topright h1 {
+    font-size: 2rem;
+    color: var(--primaryforeground);
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+  }
+  .lowertext h2 {
+    color: var(--primaryforeground);
+    font-size: 1.6rem;
+    word-wrap: normal;
+    line-height: 1.8;
+  }
+
+  #booktooltip {
+    display: inline-flex;
+    background-color: rgb(203, 34, 34);
+    border-radius: 40px;
+    padding: 10px;
+    width: 70px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+  }
+  #booktooltip img {
+    width: 50%;
+    height: 90%;
+  }
+  #calendartooltip {
+    display: inline-flex;
+    background-color: rgb(50, 148, 228);
+    border-radius: 40px;
+    padding: 10px;
+    width: 70px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+  }
+  #calendartooltip img {
+    width: 40%;
+    height: 75%;
+  }
+  #websitetooltip {
+    display: inline-flex;
+    background-color: rgb(50, 228, 139);
+    border-radius: 40px;
+    padding: 10px;
+    width: 70px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+  }
+  #websitetooltip img {
+    width: 40%;
+    height: 80%;
+  }
+  #aitooltip {
+    display: inline-flex;
+    background-color: rgb(228, 213, 50);
+    border-radius: 40px;
+    padding: 10px;
+    width: 70px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+  }
+  #aitooltip img {
+    width: 40%;
+    height: 80%;
+  }
+
+  #page2 {
+    /* height: 200vh; */
+    display: flex;
+    flex-direction: column;
+  }
+  #page2left {
+    background-color: var(--primarybackground);
+    width: 100%;
+    height: 40%;
+    padding-bottom: 30px;
+  }
+  #p2lefttop {
+    margin: auto;
+    width: 100%;
+    height: 70%;
+  }
+  .p2lefttopimg{
+    height: 140px;
+  }
+  #p2leftbottom {
+    margin: auto;
+    width: 55%;
+    height: 35%;
+    padding: 10px;
+    border-radius: 100%;
+  }
+  #p2leftbottombtn{
+    width: 65%;
+    height: 130px;
+  }
+  #page2right {
+    background-color: var(--primarybackground);
+    padding-top: 30px;
+    height: 60%;
+    width: 99%;
+    /* padding-left: 0px; */
+
+  }
+  #page2right h3 {
+    font-size: 4.7vw;
+    line-height: 1.5;
+    
+  }
+  #experiences h1{
+    font-size: 2vh;
+  }
+}

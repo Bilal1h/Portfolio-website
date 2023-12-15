@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@1,300&family=Patrick+Hand&family=Poppins:wght@100&display=swap");
+@font-face {
+  font-family: "Chloe";
+  src: url("../Fonts/Chloe-Regular.otf");
+}
+
+:root {
+  --primaryforeground: #000;
+  --primarybackground: #efefef;
+  --darkcolor: #363636;
+  --resultbackground:#fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--primarybackground);
+  overflow-x: hidden;
+  cursor: url(../Images/tempimages/blackcursor.webp), default;
+}
+.result{
+  position: relative;
+  height: 110vh;
+  width: 100vw;
+  background-color: var(--primarybackground);
+}
+.results .right11 {
+  display: block;
+  margin-bottom: 10px; /* Adjust the margin as needed */
+}
+.results .appended-div + hr {
+  margin: 160px 0; /* Adjust the margin as needed */
+  border: none;
+  border-top: 1px solid #ccc; /* Add a border for a visible separation */
+}
+#resulthead {
+  position: relative;
+  bottom: 25%;
+  left: 45%;
+  font-size: 4.5vw;
+  color: var(--primaryforeground);
+  font-weight: 400;
+  opacity: 1;
+  font-family: chloe;
+}
+#resulthead {
+  cursor: url(../Images/tempimages/text-cursor.webp), auto;
+
+
+}
+
+ 
+.dark-light{
+    color: var(--primaryforeground);
+    background-color: var(--resultbackground);
+}
