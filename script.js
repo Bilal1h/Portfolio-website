@@ -1,17 +1,18 @@
 
-
 var check = document.querySelector("#check");
 var nav = document.querySelector("#nav");
 var hamburgermenu = document.querySelector("#menu-icon");
-var elem1 = document.querySelectorAll(".elem1 h2");
-var page2content = document.querySelector("#page2-content");
 var navright = document.querySelector("#topright h1");
-var navelem1 = document.querySelector("#navelem1 a");
-var navelem2 = document.querySelector("#navelem2 a");
-var navelem3 = document.querySelector("#navelem3 a");
-var navelem4 = document.querySelector("#navelem4 a");
-var allnavelem = document.querySelectorAll(".elem1 h2");
-var elem1 = document.querySelectorAll(".elem1");
+var navelem1 = document.querySelector("#navelem1");
+var navelem2 = document.querySelector("#navelem2");
+var navelem3 = document.querySelector("#navelem3");
+var navelem4 = document.querySelector("#navelem4");
+var navelem1link = document.querySelector("#navelem1link");
+var navelem2link = document.querySelector("#navelem2link");
+var navelem3link = document.querySelector("#navelem3link");
+var navelem4link = document.querySelector("#navelem4link");
+var allnavelem = document.querySelectorAll(".elem1 a");
+var page2 = document.querySelector("#page2");
 Shery.textAnimate("#topright h1" /* Element to target.*/, {
   //Parameters are optional.
   style: 1,
@@ -21,24 +22,15 @@ Shery.textAnimate("#topright h1" /* Element to target.*/, {
   ease: "cubic-bezier(0.23, 1, 0.320, 1)",
   multiplier: 10,
 });
-
-
-
-
-
-
-
-
-navelem1.addEventListener("mouseover",()=>{
+navelem1.addEventListener("mouseover", () => {
   navright.innerHTML = "HOME";
-  
-})
-navelem1.addEventListener("mouseout",()=>{
-  navright.innerHTML = "HOME";
-})
-navelem2.addEventListener("mouseover",()=>{
+});
+navelem1.addEventListener("mouseout", () => {
   navright.innerHTML = "ABOUT";
-   Shery.textAnimate("#topright h1" /* Element to target.*/, {
+});
+navelem2.addEventListener("mouseover", () => {
+  navright.innerHTML = "ABOUT";
+  Shery.textAnimate("#topright h1" /* Element to target.*/, {
     //Parameters are optional.
     style: 1,
     y: 10,
@@ -47,13 +39,13 @@ navelem2.addEventListener("mouseover",()=>{
     ease: "cubic-bezier(0.23, 1, 0.320, 1)",
     multiplier: 10,
   });
-})
-navelem2.addEventListener("mouseout",()=>{
-  navright.innerHTML = "HOME";
-})
-navelem3.addEventListener("mouseover",()=>{
+});
+navelem2.addEventListener("mouseout", () => {
+  navright.innerHTML = "ABOUT";
+});
+navelem3.addEventListener("mouseover", () => {
   navright.innerHTML = "PROJECTS";
-   Shery.textAnimate("#topright h1" /* Element to target.*/, {
+  Shery.textAnimate("#topright h1" /* Element to target.*/, {
     //Parameters are optional.
     style: 1,
     y: 10,
@@ -62,13 +54,14 @@ navelem3.addEventListener("mouseover",()=>{
     ease: "cubic-bezier(0.23, 1, 0.320, 1)",
     multiplier: 10,
   });
-})
-navelem3.addEventListener("mouseout",()=>{
-  navright.innerHTML = "HOME";
-})
-navelem4.addEventListener("mouseover",()=>{
+});
+
+navelem3.addEventListener("mouseout", () => {
+  navright.innerHTML = "ABOUT";
+});
+navelem4.addEventListener("mouseover", () => {
   navright.innerHTML = "CONTACT";
-   Shery.textAnimate("#topright h1" /* Element to target.*/, {
+  Shery.textAnimate("#topright h1" /* Element to target.*/, {
     //Parameters are optional.
     style: 1,
     y: 10,
@@ -77,15 +70,17 @@ navelem4.addEventListener("mouseover",()=>{
     ease: "cubic-bezier(0.23, 1, 0.320, 1)",
     multiplier: 10,
   });
-})
-navelem4.addEventListener("mouseout",()=>{
-  navright.innerHTML = "HOME";
-})
+});
+
+navelem4.addEventListener("mouseout", () => {
+  navright.innerHTML = "ABOUT";
+});
 
 
-
-
-
+    navelem1link.style.display = "none";
+    navelem2link.style.display = "none";
+    navelem3link.style.display = "none";
+    navelem4link.style.display = "none";
 
 
 check.addEventListener("change", function (e) {
@@ -96,21 +91,9 @@ check.addEventListener("change", function (e) {
       document.querySelector("#nav h1").style.opacity = "1";
       hamburgermenu.classList.remove("ri-menu-line");
       hamburgermenu.classList.add("ri-close-line");
+      allnavelem.style.cursor="url(./Images/tempimages/pointer-cursor.png),auto"
 
-      navelem1.addEventListener("click",()=>{
-        window.location.href="#";
-      })
-      navelem2.addEventListener("click",()=>{
-        window.location.href="./about.html";
-      })
-      navelem3.addEventListener("click",()=>{
-        window.location.href="./projects.html";
-      })
-      navelem4.addEventListener("click",()=>{
-        window.location.href="./contact.html";
-      })
 
-      
       Shery.textAnimate("#top h1" /* Element to target.*/, {
         //Parameters are optional.
         style: 1,
@@ -129,10 +112,12 @@ check.addEventListener("change", function (e) {
       document.querySelector("#nav h1").style.opacity = "1";
       hamburgermenu.classList.remove("ri-menu-line");
       hamburgermenu.classList.add("ri-close-line");
-      navelem1.href="#";
-      navelem2.href="./about.html";
-      navelem3.href="./projects.html";
-      navelem4.href="./contact.html";
+      // allnavelem.style.display = "block";
+      navelem1link.style.display = "block";
+      navelem2link.style.display = "block";
+      navelem3link.style.display = "block";
+      navelem4link.style.display = "block";
+
       Shery.textAnimate("#top h1" /* Element to target.*/, {
         //Parameters are optional.
         style: 1,
@@ -146,22 +131,13 @@ check.addEventListener("change", function (e) {
         duration: 10.3,
       });
     }
-
-
-
-   
   } else {
     nav.style.opacity = "0";
     nav.style.width = "0px";
-    navelem1.href="#";
-    navelem2.href="#";
-    navelem3.href="#";
-    navelem4.href="#";
 
     document.querySelector("#nav h1").style.opacity = "0";
     hamburgermenu.classList.remove("ri-close-line");
     hamburgermenu.classList.add("ri-menu-line");
-    elem1.style.display = "none";
   }
 });
 
