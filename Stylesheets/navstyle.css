@@ -411,7 +411,7 @@ swiper-slide:nth-child(6) {
   line-height: 1;
   font-weight: 300;
 }
-#page4 > button {
+#page4 > a {
   margin-top: 40px;
   padding: 10px 20px;
   border: none;
@@ -420,7 +420,7 @@ swiper-slide:nth-child(6) {
   color: #fff;
   font-size: 1.1vw;
 }
-#page4 > button:hover {
+#page4 > a:hover {
   background-color: #fff;
   color: #30bced;
   cursor: url(../Images/tempimages/pointer-cursor.png), auto;
