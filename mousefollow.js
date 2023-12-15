@@ -6,3 +6,6 @@ if (screen.width>450){
       });
       
 }
+else{
+  console.log("Cancelled follower")
+}
