@@ -204,7 +204,9 @@ footer p {
   color: var(--primaryforeground);
 }
 @media (max-width: 850px) {
-
+  .elem1 h2{
+    pointer-events: none;
+  }
   #topright h1 {
     font-size: 2rem;
     color: var(--primaryforeground);

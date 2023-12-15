@@ -12,7 +12,7 @@
   var navelem2link = document.querySelector("#navelem2link");
   var navelem3link = document.querySelector("#navelem3link");
   var navelem4link = document.querySelector("#navelem4link");
-  var allnavelem = document.querySelectorAll(".elem1");
+  var allnavelem = document.querySelectorAll(".elem1 h2");
   Shery.textAnimate("#topright h1" /* Element to target.*/, {
     //Parameters are optional.
     style: 1,
@@ -95,7 +95,8 @@
         navelem2link.style.display = "block";
         navelem3link.style.display = "block";
         navelem4link.style.display = "block";
-  
+        allnavelem.style.pointerEvents="all"
+
         Shery.textAnimate("#top h1" /* Element to target.*/, {
           //Parameters are optional.
           style: 1,
@@ -136,7 +137,8 @@
     } else {
       nav.style.opacity = "0";
       nav.style.width = "0px";
-  
+      allnavelem.style.pointerEvents="none"
+
       document.querySelector("#nav h1").style.opacity = "0";
       hamburgermenu.classList.remove("ri-close-line");
       hamburgermenu.classList.add("ri-menu-line");

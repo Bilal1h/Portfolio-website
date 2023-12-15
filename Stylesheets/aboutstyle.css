@@ -67,9 +67,7 @@ body {
 .elem1 {
   margin: 10px;
 }
-.elem1:hover {
-  cursor: pointer;
-}
+
 .elem1 a {
   text-decoration: none;
   color: #303036;
@@ -91,9 +89,6 @@ body {
 }
 .elem1:hover a {
   transform: translateY(-46%);
-}
-.show {
-  display: block !important; /* Important to override display: none */
 }
 
 #button {
@@ -385,6 +380,7 @@ footer p {
   color: var(--primaryforeground);
 }
 @media (max-width: 850px) {
+
  #topright{
   width: 20%;
  }

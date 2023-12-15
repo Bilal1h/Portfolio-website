@@ -57,3 +57,7 @@ body {
     color: var(--primaryforeground);
     background-color: var(--resultbackground);
 }
+@media (max-width: 798px) {
+.elem1 h2{
+  pointer-events: none;
+}}

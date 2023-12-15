@@ -252,8 +252,18 @@ footer p {
   color: var(--primaryforeground);
 }
 @media (max-width: 798px) {
+  .elem1 h2{
+    pointer-events: none;
+  }
+  #top{
+    width: 100%;
+  }
+  #topright{
+    width: 5%;
+    justify-content: end;
+  }
   #topright h1{
-    font-size: 3rem;
+    font-size: 2.2rem;
     color: var(--primaryforeground);
     writing-mode: vertical-lr;
     text-orientation: upright;

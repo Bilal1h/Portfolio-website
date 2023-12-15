@@ -7,6 +7,7 @@ var navelem1 = document.querySelector("#navelem1");
 var navelem2 = document.querySelector("#navelem2");
 var navelem3 = document.querySelector("#navelem3");
 var navelem4 = document.querySelector("#navelem4");
+var allnavelem = document.querySelector(".elem1 h2");
 Shery.textAnimate("#topright h1" /* Element to target.*/, {
   //Parameters are optional.
   style: 1,
@@ -76,6 +77,7 @@ check.addEventListener("change", function (e) {
       document.querySelector("#nav h1").style.opacity = "1";
       hamburgermenu.classList.remove("ri-menu-line");
       hamburgermenu.classList.add("ri-close-line");
+      allnavelem.style.pointerEvents="all"
 
       Shery.textAnimate("#top h1" /* Element to target.*/, {
         //Parameters are optional.
@@ -117,6 +119,7 @@ check.addEventListener("change", function (e) {
   else {
     nav.style.opacity = "0";
     nav.style.width = "0px";
+    allnavelem.style.pointerEvents="none"
 
     document.querySelector("#nav h1").style.opacity = "0";
     hamburgermenu.classList.remove("ri-close-line");

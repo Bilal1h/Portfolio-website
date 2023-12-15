@@ -10,7 +10,7 @@ window.addEventListener("load", function () {
 var check = document.querySelector("#check");
 var nav = document.querySelector("#nav");
 var hamburgermenu = document.querySelector("#menu-icon");
-
+var allnavelem = document.querySelector(".elem1 h2")
 var page2content = document.querySelector("#page2-content");
 check.addEventListener("change", function (e) {
   if (e.target.checked) {
@@ -20,6 +20,7 @@ check.addEventListener("change", function (e) {
       document.querySelector("#nav h1").style.opacity = "1";
       hamburgermenu.classList.remove("ri-menu-line");
       hamburgermenu.classList.add("ri-close-line");
+      allnavelem.style.pointerEvents="all"
 
       Shery.textAnimate("#top h1" /* Element to target.*/, {
         //Parameters are optional.
@@ -39,6 +40,7 @@ check.addEventListener("change", function (e) {
       document.querySelector("#nav h1").style.opacity = "1";
       hamburgermenu.classList.remove("ri-menu-line");
       hamburgermenu.classList.add("ri-close-line");
+      allnavelem.style.pointerEvents="none"
 
       Shery.textAnimate("#top h1" /* Element to target.*/, {
         //Parameters are optional.

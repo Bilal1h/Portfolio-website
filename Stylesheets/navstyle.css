@@ -39,7 +39,7 @@ body {
 
 #nav {
   display: flex;
-  width: 0px; /* Set it to 100vw by default */
+  width: 100vw; /* Set it to 100vw by default */
   height: 100vh;
   background-color: var(--primarybackground);
   transition: 0.8s;
@@ -76,7 +76,6 @@ body {
   /* font-size: 40px; */
 }
 .elem1 {
-  /* display: block; */
   margin: 10px;
 }
 .elem1:hover {
@@ -93,6 +92,7 @@ body {
   overflow: hidden;
   height: 64px;
 }
+
 .elem1 a {
   font-family: "Montserrat", sans-serif;
   display: flex;
@@ -484,9 +484,10 @@ footer p {
 }
 
 @media (max-width: 798px) {
-  .elem1:hover {
-    cursor: none;
+  .elem1 h2{
+    pointer-events: none;
   }
+ 
   #top h1 {
     font-size: 25px;
   }

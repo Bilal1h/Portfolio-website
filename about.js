@@ -11,7 +11,7 @@ var navelem1link = document.querySelector("#navelem1link");
 var navelem2link = document.querySelector("#navelem2link");
 var navelem3link = document.querySelector("#navelem3link");
 var navelem4link = document.querySelector("#navelem4link");
-var allnavelem = document.querySelectorAll(".elem1");
+var allnavelem = document.querySelectorAll(".elem1 a");
 var page2 = document.querySelector("#page2");
 Shery.textAnimate("#topright h1" /* Element to target.*/, {
   //Parameters are optional.
@@ -91,16 +91,9 @@ check.addEventListener("change", function (e) {
       document.querySelector("#nav h1").style.opacity = "1";
       hamburgermenu.classList.remove("ri-menu-line");
       hamburgermenu.classList.add("ri-close-line");
-      // allnavelem.stlye.display="block";
-      // navelem1link.stlye.display="block";
-      // navelem2link.stlye.display="block";
-      // navelem3link.stlye.display="block";
-      // navelem4link.stlye.display="block";
-      // allnavelem.style.display = "block";
-      navelem1link.style.display = "block";
-      navelem2link.style.display = "block";
-      navelem3link.style.display = "block";
-      navelem4link.style.display = "block";
+      allnavelem.style.cursor="url(./Images/tempimages/pointer-cursor.png),auto"
+      allnavelem.style.pointerEvents="all"
+
 
       Shery.textAnimate("#top h1" /* Element to target.*/, {
         //Parameters are optional.
@@ -142,6 +135,7 @@ check.addEventListener("change", function (e) {
   } else {
     nav.style.opacity = "0";
     nav.style.width = "0px";
+    allnavelem.style.pointerevents="none"
 
     document.querySelector("#nav h1").style.opacity = "0";
     hamburgermenu.classList.remove("ri-close-line");
