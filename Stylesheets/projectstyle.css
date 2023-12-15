@@ -252,11 +252,16 @@ footer p {
   color: var(--primaryforeground);
 }
 @media (max-width: 798px) {
+  #topright h1{
+    font-size: 3rem;
+    color: var(--primaryforeground);
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+  }
+ 
   .allprojects-inner {
+    
     flex-direction: column;
-    /* margin-left:10vw; */
-    /* margin-left:10vw; */
-
   }
   #allprojects > h1 {
     position: relative;

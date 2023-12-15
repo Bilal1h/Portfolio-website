@@ -1,9 +1,4 @@
 
-Shery.mouseFollower({
-  skew: true,
-  ease: "cubic-bezier(0.23, 100, 0.320, 100)",
-  duration: 1,
-});
 
 var check = document.querySelector("#check");
 var nav = document.querySelector("#nav");
