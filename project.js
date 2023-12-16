@@ -30,10 +30,10 @@ navelem2.addEventListener("mouseover",()=>{
     //Parameters are optional.
     style: 1,
     y: 10,
-    delay: 0.1,
-    duration: 2,
+    delay: 0,
+    duration: .1,
     ease: "cubic-bezier(0.23, 1, 0.320, 1)",
-    multiplier: 10,
+    multiplier: 1,
   });
 })
 navelem2.addEventListener("mouseout",()=>{
@@ -45,10 +45,10 @@ navelem3.addEventListener("mouseover",()=>{
     //Parameters are optional.
     style: 1,
     y: 10,
-    delay: 0.1,
-    duration: 2,
+    delay: 0,
+    duration: .1,
     ease: "cubic-bezier(0.23, 1, 0.320, 1)",
-    multiplier: 10,
+    multiplier: 1,
   });
 })
 navelem3.addEventListener("mouseout",()=>{
@@ -60,10 +60,10 @@ navelem4.addEventListener("mouseover",()=>{
     //Parameters are optional.
     style: 1,
     y: 10,
-    delay: 0.1,
-    duration: 2,
+    delay: 0,
+    duration: .1,
     ease: "cubic-bezier(0.23, 1, 0.320, 1)",
-    multiplier: 10,
+    multiplier: 1,
   });
 })
 navelem4.addEventListener("mouseout",()=>{

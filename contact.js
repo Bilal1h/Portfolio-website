@@ -17,10 +17,10 @@
     //Parameters are optional.
     style: 1,
     y: 10,
-    delay: 0.1,
-    duration: 2,
+    delay: 0,
+    duration: .1,
     ease: "cubic-bezier(0.23, 1, 0.320, 1)",
-    multiplier: 10,
+    multiplier: 1,
   });
   navelem1.addEventListener("mouseover", () => {
     navright.innerHTML = "HOME";
@@ -32,12 +32,13 @@
     navright.innerHTML = "ABOUT";
     Shery.textAnimate("#topright h1" /* Element to target.*/, {
       //Parameters are optional.
-      style: 1,
-      y: 10,
-      delay: 0.1,
-      duration: 2,
-      ease: "cubic-bezier(0.23, 1, 0.320, 1)",
-      multiplier: 10,
+ //Parameters are optional.
+    style: 1,
+    y: 10,
+    delay: 0,
+    duration: .1,
+    ease: "cubic-bezier(0.23, 1, 0.320, 1)",
+    multiplier: 1,
     });
   });
   navelem2.addEventListener("mouseout", () => {
@@ -47,12 +48,13 @@
     navright.innerHTML = "PROJECTS";
     Shery.textAnimate("#topright h1" /* Element to target.*/, {
       //Parameters are optional.
-      style: 1,
-      y: 10,
-      delay: 0.1,
-      duration: 2,
-      ease: "cubic-bezier(0.23, 1, 0.320, 1)",
-      multiplier: 10,
+ //Parameters are optional.
+    style: 1,
+    y: 10,
+    delay: 0,
+    duration: .1,
+    ease: "cubic-bezier(0.23, 1, 0.320, 1)",
+    multiplier: 1,
     });
   });
   
@@ -63,12 +65,13 @@
     navright.innerHTML = "CONTACT";
     Shery.textAnimate("#topright h1" /* Element to target.*/, {
       //Parameters are optional.
-      style: 1,
-      y: 10,
-      delay: 0.1,
-      duration: 2,
-      ease: "cubic-bezier(0.23, 1, 0.320, 1)",
-      multiplier: 10,
+ //Parameters are optional.
+    style: 1,
+    y: 10,
+    delay: 0,
+    duration: .1,
+    ease: "cubic-bezier(0.23, 1, 0.320, 1)",
+    multiplier: 1,
     });
   });
   

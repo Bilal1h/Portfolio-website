@@ -14,13 +14,13 @@ var navelem4link = document.querySelector("#navelem4link");
 var allnavelem = document.querySelectorAll(".elem1 a");
 var page2 = document.querySelector("#page2");
 Shery.textAnimate("#topright h1" /* Element to target.*/, {
-  //Parameters are optional.
-  style: 1,
-  y: 10,
-  delay: 0.1,
-  duration: 2,
-  ease: "cubic-bezier(0.23, 1, 0.320, 1)",
-  multiplier: 10,
+   //Parameters are optional.
+   style: 1,
+   y: 10,
+   delay: 0,
+   duration: .1,
+   ease: "cubic-bezier(0.23, 1, 0.320, 1)",
+   multiplier: 1,
 });
 navelem1.addEventListener("mouseover", () => {
   navright.innerHTML = "HOME";
@@ -34,10 +34,10 @@ navelem2.addEventListener("mouseover", () => {
     //Parameters are optional.
     style: 1,
     y: 10,
-    delay: 0.1,
-    duration: 2,
+    delay: 0,
+    duration: .1,
     ease: "cubic-bezier(0.23, 1, 0.320, 1)",
-    multiplier: 10,
+    multiplier: 1,
   });
 });
 navelem2.addEventListener("mouseout", () => {
@@ -49,10 +49,10 @@ navelem3.addEventListener("mouseover", () => {
     //Parameters are optional.
     style: 1,
     y: 10,
-    delay: 0.1,
-    duration: 2,
+    delay: 0,
+    duration: .1,
     ease: "cubic-bezier(0.23, 1, 0.320, 1)",
-    multiplier: 10,
+    multiplier: 1,
   });
 });
 
@@ -65,10 +65,10 @@ navelem4.addEventListener("mouseover", () => {
     //Parameters are optional.
     style: 1,
     y: 10,
-    delay: 0.1,
-    duration: 2,
+    delay: 0,
+    duration: .1,
     ease: "cubic-bezier(0.23, 1, 0.320, 1)",
-    multiplier: 10,
+    multiplier: 1,
   });
 });
 
