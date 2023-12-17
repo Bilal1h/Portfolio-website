@@ -39,7 +39,7 @@ body {
 
 #nav {
   display: flex;
-  width: 100vw; /* Set it to 100vw by default */
+  width: 0px; /* Set it to 100vw by default */
   height: 100vh;
   background-color: var(--primarybackground);
   transition: 0.8s;
@@ -54,15 +54,16 @@ body {
   font-size: 40px;
   border-bottom: 1px solid black;
 }
-#topright {
+#topright{
   width: 35%;
   display: flex;
   align-items: center;
   background-color: var(--primarybackground);
 }
-#topright h1 {
+#topright h1{
   font-size: 6rem;
   color: var(--primaryforeground);
+
 }
 #top {
   width: 65%;
@@ -75,9 +76,12 @@ body {
   /* font-size: 40px; */
 }
 .elem1 {
+  /* display: block; */
   margin: 10px;
 }
-
+.elem1:hover {
+  cursor: pointer;
+}
 .elem1 a {
   text-decoration: none;
   color: #303036;
@@ -100,7 +104,6 @@ body {
 .elem1:hover a {
   transform: translateY(-46%);
 }
-
 #button {
   /* color: rgb(255, 179, 0); */
   font-size: 30px;
@@ -114,7 +117,10 @@ body {
   transform: translateY(-50px);
 
 }
-
+#searchform{
+  width: 50%;
+  margin: auto;
+}
 #hamburgermenu {
   cursor: pointer;
   position: fixed;
@@ -187,7 +193,7 @@ body {
 }
 
 .box img {
-  width: 87%;
+  width: 82%;
 }
 
 #bottomleft {
